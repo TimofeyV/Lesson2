@@ -11,5 +11,6 @@ else
     {
         number /= 10;
     }
+    Console.Write("Третья цифра в этом числе: ");
     Console.WriteLine(number % 10);
 }
