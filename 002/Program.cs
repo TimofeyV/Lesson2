@@ -4,11 +4,11 @@ int number = Convert.ToInt32(text);
 int result = number;
 int count = 0;
 
-if (number < 0) number *= -1;
-if (number < 100) Console.WriteLine("B числе нет 3-ей цифры");
+number = Math.Abs(number); //Модуль числа, исключается ошибка с числами меньше 0
+if (number < 100) Console.WriteLine("B числе нет 3-ей цифры"); // Отсеиваем числа 0 - 99
 else
 {
-    while (number > 999)
+    while (number > 999) 
     {
         number /= 10;
     }
